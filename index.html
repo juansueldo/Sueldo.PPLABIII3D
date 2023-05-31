@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Anuncios</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seccion-formulario">
+            <h1 class="titulo-app">Crud Heores</h1>
+            <form>
+                <fieldset>
+                    <input type="text" name="txtId" hidden>
+                    <legend id="titulo">Informacion del SuperHeroe</legend>
+                    <p><label>Nombre</label></p>
+                    <p><input type="text" name="txtNombre" placeholder="Ingrese nombre"></p>
+                    <p><label>Alias</label></p>
+                    <p><input type="text" name="txtAlias" placeholder="Ingrese alter-ego"></p>
+                    <p><label>Editorial</label></p>
+                    <p>DC<input type="radio" name="rdoEditorial" value="DC" id="" checked></p>
+                    <p>Marvel<input type="radio" name="rdoEditorial" value="Marvel" id=""></p>
+                    <p><label>Fuerza:</label></p>
+                    <p><input type="range" name="txtFuerza" min="0" max="1000" value="500"></p>
+                    <p><label>Arma:</label></p>
+                    <select id="select-arma" name="select">
+    
+                    </select>
+                    <input type="submit" value="Guardar" class="guardar boton">
+                    <input type="button" value="Eliminar" class="eliminar boton hidden-btn" id="button">
+                    <input type="button" value="Cancelar" class="cancelar boton hidden-btn" id="button-cancel">
+                </fieldset>
+            </form>
+        </section>
+        <section class="seccion-tabla">
+            <h2 class="titulo-superheroes">Lista de SuperHeroes</h2>
+            <div id="spinner" class="spinner"></div>
+            <div id="tabla"></div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Personajes</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <p>Laboratorio III - Todos los derechos reservados &copy;</p>
+    </footer>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
