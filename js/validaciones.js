@@ -13,7 +13,8 @@ function ValidarNro(numero){
 function ValidarString(parametro, minimaLongitud, maximaLongitud) {
     var retorno = false;
     if (typeof parametro === 'string') {
-        if (parametro.length >= minimaLongitud && parametro.length <= maximaLongitud && /^[A-Za-z]+$/.test(parametro)) {
+        if (parametro.length >= minimaLongitud && parametro.length <= maximaLongitud && /^[A-Za-z ]+$/.test(parametro)
+        ) {
             retorno = true;
         }
     }

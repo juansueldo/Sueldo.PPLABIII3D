@@ -13,7 +13,7 @@ const crearTabla = (data)=>{
         tabla.appendChild(crearCuerpo(data));
 
         ocultarSpinner();
-  }, 1000); // Tiempo de carga simulado (2 segundos)
+  }, 2000); // Tiempo de carga simulado (2 segundos)
 
     }
 
@@ -54,6 +54,9 @@ const crearCuerpo = (data)=>{
             else{
                 if(index % 2 === 0){
                     tr.classList.add("rowPar");
+                }
+                else{
+                    tr.classList.add("rowImpar")
                 }
                 const td = document.createElement("td");
                 //De esta manera se crean mas manejadores de eventos td.addEventListener("click", handlerClickTd);
